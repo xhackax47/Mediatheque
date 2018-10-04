@@ -35,12 +35,12 @@
     <form action="/pageAction" method="POST">
         <div>
             <label for="firstName">Prénom* :</label>
-            <input type="text" id="firstName" name="user_firstName" required>
+            <input type="text" id="firstName" name="user_firstName" autofocus autocomplete="off" required>
         </div>
         <br>
         <div>
             <label for="lastName">Nom* :</label>
-            <input type="text" id="lastName" name="user_lastName" required>
+            <input pattern="[A-Z]*" type="text" id="lastName" name="user_lastName" autocomplete="off" required>
         </div>
         <br>
         <div>
@@ -57,37 +57,39 @@
             <label for="tel">Téléphone* :</label>
             <input type="tel" id="tel" name="user_tel" required>
         </div>
-        <fieldset>
+        <br>
+        <fieldset required>
             <legend>Préferences de contact* :</legend>
             <div>
-                <input type="radio" id="telPref" name="contactPreferences" value="coding" required>
+                <input type="radio" id="telPref" name="contactPreferences" value="coding">
                 <label for="telPref">Téléphone</label>
             </div>
             <div>
-                <input type="radio" id="mailPref" name="contactPreferences" value="music" required>
+                <input type="radio" id="mailPref" name="contactPreferences" value="music">
                 <label for="mailPref">E-mail</label>
             </div>
         </fieldset>
-        <fieldset>
+        <br>
+        <fieldset required>
             <legend>Services souscrits* :</legend>
             <div>
                 <label for="anim">Animations</label>
-                <input type="checkbox" id="anim" name="services" value="coding" required>
+                <input type="checkbox" id="anim" name="services" value="coding">
             </div>
             <div>
                 <label for="spect">Spectacles</label>
-                <input type="checkbox" id="spect" name="services" value="music" required>
+                <input type="checkbox" id="spect" name="services" value="music">
             </div>
             <div>
                 <label for="empruntsIll">Emprunts Illimités</label>
-                <input type="checkbox" id="empruntsIll" name="services" value="coding" required>
+                <input type="checkbox" id="empruntsIll" name="services" value="coding">
             </div>
         </fieldset>
 
         <br>
         <div>
             <label for="codeParrain">Code parrain :</label>
-            <input type="number" id="codeParrain" name="codeParrain" required>
+            <input type="number" id="codeParrain" name="codeParrain" min="10" required>
         </div>
 
         <br>
