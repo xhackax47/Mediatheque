@@ -1,0 +1,12 @@
+body {
+    color: whitesmoke;
+    background-color: black;
+}
+
+a:hover{
+    color:yellowgreen;
+}
+
+a:visited{
+    color:violet;
+}

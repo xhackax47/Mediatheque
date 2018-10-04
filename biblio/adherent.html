@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content=" Page Index/Accueil de la médiathèque ">
+    <link rel="icon" href="resources/Favicon.png" />
+    <title>Inscription</title>
+    <!-- <link rel="stylesheet" href="resources/style.css"> -->
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <h1>Inscription</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+
+                <li>Bibliothèque
+                    <ul>
+                        <li><a href="jeux.html">Jeux</a></li>
+                        <li><a href="musiques.html">Musiques</a></li>
+                        <li><a href="videos.html">Vidéos</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="adherents.html">Adhérents</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header></header>
+    <form action="/pageAction" method="POST">
+        <div>
+            <label for="firstName">Prénom* :</label>
+            <input type="text" id="firstName" name="user_firstName" required>
+        </div>
+        <br>
+        <div>
+            <label for="lastName">Nom* :</label>
+            <input type="text" id="lastName" name="user_lastName" required>
+        </div>
+        <br>
+        <div>
+            <label for="birthDate">Date de naissance* :</label>
+            <input type="date" id="birthDate" name="user_birthDate" required>
+        </div>
+        <br>
+        <div>
+            <label for="mail">Adresse E-mail* :</label>
+            <input type="email" id="mail" name="user_mail" required>
+        </div>
+        <br>
+        <div>
+            <label for="tel">Téléphone* :</label>
+            <input type="tel" id="tel" name="user_tel" required>
+        </div>
+        <fieldset>
+            <legend>Préferences de contact* :</legend>
+            <div>
+                <input type="radio" id="telPref" name="contactPreferences" value="coding" required>
+                <label for="telPref">Téléphone</label>
+            </div>
+            <div>
+                <input type="radio" id="mailPref" name="contactPreferences" value="music" required>
+                <label for="mailPref">E-mail</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Services souscrits* :</legend>
+            <div>
+                <label for="anim">Animations</label>
+                <input type="checkbox" id="anim" name="services" value="coding" required>
+            </div>
+            <div>
+                <label for="spect">Spectacles</label>
+                <input type="checkbox" id="spect" name="services" value="music" required>
+            </div>
+            <div>
+                <label for="empruntsIll">Emprunts Illimités</label>
+                <input type="checkbox" id="empruntsIll" name="services" value="coding" required>
+            </div>
+        </fieldset>
+
+        <br>
+        <div>
+            <label for="codeParrain">Code parrain :</label>
+            <input type="number" id="codeParrain" name="codeParrain" required>
+        </div>
+
+        <br>
+        <div>
+            <SELECT name="pays" required>
+                <OPTION selected value="FR">FRANCE</OPTION>
+                <OPTION value="EN">ENGLAND</OPTION>
+                <OPTION value="ES">ESPANOL</OPTION>
+                <OPTION value="IT">ITALIA</OPTION>
+                <OPTION value="CU">CUBA</OPTION>
+            </SELECT>
+        </div>
+
+        <br>
+        <div>
+            <label for="VIP">VIP</label>
+            <input type="checkbox" id="VIP" name="VIP" value=false>
+        </div>
+
+        <br>
+        <div>
+            <input type="submit" id="submit" value="S'inscrire">
+        </div>
+    </form>
+    <br>
+    <footer>COPYRIGHT@2018 Samy</footer>
+</body>
+
+</html>
