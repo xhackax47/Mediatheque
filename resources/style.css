@@ -10,6 +10,13 @@ body {
     text-align: center;
 }
 
+/* Images dans le body */
+img{
+    width: 640px;
+    height: 480px;
+}
+
+
 /* Pied de page */
 footer{
     border: solid 1px white;
@@ -61,8 +68,36 @@ h4{
 }
 
 /* Tableau */
-table{
+table {
+    border-bottom: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    border-collapse: collapse;
+    width: 50%;
+    margin:auto;
+}
+th {
+    font-family: monospace;
+    border: 1px solid firebrick;
+    width: 50%;
+    padding: 5px;
+    background-color: firebrick;
+}
+td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid firebrick;
+    width: 50%;
+    padding: 5px;
     text-align: center;
+    background-color: firebrick;
+}
+tfoot{
+    border: 2px solid whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+caption {
+    border: 2px dotted whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Paragraphe */
@@ -73,11 +108,6 @@ p{
 /* Vidéo (non iframe) */
 video{
     padding-right: 20%;
-}
-
-/* Liste id=listAdherents */
-#listAdherents{
-    text-align: center;
 }
 
 /* Lien survol */
@@ -97,6 +127,11 @@ a:visited{
     color: whitesmoke;
 }
 
+/* Liste id=listAdherents */
+#listAdherents{
+    text-align: center;
+}
+
 /* Lien visité dans id=menuG */
 #menuG a:visited{
     color: whitesmoke;
@@ -111,7 +146,6 @@ a:visited{
 #menuG{
     color: whitesmoke;
     margin: 0;
-    padding: 0;
 }
 
 /* Image dans class=main */
@@ -145,11 +179,10 @@ a:visited{
     color: whitesmoke;
     display: flex;
     background-color: darkslategrey;
-    border: 1px solid slateblue;
     border-radius: 10px;
     font-size: 18px;
-    padding: 10px;
     margin: auto;
+    padding: 3px;
 }
 
 /* class=videosWar3 */
@@ -171,4 +204,35 @@ a:visited{
 #inlineFrameWar3{
     display: block;
     text-align: center;
+}
+
+/* id=ico */
+#ico{
+    width: 70px;
+    height: 70px; 
+}
+
+.trends{
+    box-sizing: border-box;
+    display: flex;
+}
+
+.trends article{
+    background-color: darkslategrey;
+    border: 1px solid firebrick;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    height: 30%;
+}
+
+.trends h1{
+    background-color: firebrick;
+    color: seashell;
+    text-align: center;
+    padding: 1px;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 25em;
+    border: 2px whitesmoke solid;
 }
