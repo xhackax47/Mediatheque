@@ -108,6 +108,7 @@ p{
 /* Vidéo (non iframe) */
 video{
     padding-right: 20%;
+    padding: 20px;
 }
 
 /* Lien survol */
@@ -188,6 +189,7 @@ a:visited{
 /* class=videosWar3 */
 .videosWar3{
     text-align: center;
+    padding: 10px;
 }
 
 /* class=remember */
