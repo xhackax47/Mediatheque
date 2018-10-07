@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content=" Page Index/Accueil de la médiathèque ">
-    <link rel="icon" href="resources/Favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/Favicon.png" />
     <title>Médiathèque</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../resources/style.css">
     <!-- <script src="script.js"></script> -->
 </head>
 
@@ -14,38 +15,105 @@
     <h1>Médiathèque</h1>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-
-                <li>Bibliothèque
-                    <ul>
-                        <li><a href="jeux.html">Jeux</a></li>
-                        <li><a href="musiques.html">Musiques</a></li>
-                        <li><a href="videos.html">Vidéos</a></li>
-                    </ul>
+        <nav id="menuG">
+            <ul class="menuG">
+                <li>
+                    <img class="accueil" src="../resources/home-solid.svg" width="30" height="30" />
+                    <a href="../index.html">Accueil</a>
                 </li>
-
-                <li><a href="adherents.html">Adhérents</a></li>
+                <li>
+                    <img class="jeux" src="../resources/gamepad-solid.svg" width="30" height="30" />
+                    <a href="jeux.html">Jeux</a>
+                </li>
+                <li>
+                    <img class="musiques" src="../resources/music-solid.svg" width="30" height="30" />
+                    <a href="musiques.html">Musiques</a>
+                </li>
+                <li>
+                    <img class="videos" src="../resources/youtube-brands.svg" width="30" height="30" />
+                    <a href="videos.html">Vidéos</a>
+                </li>
+                <li>
+                    <img class="adherents" src="../resources/address-card-solid.svg" width="30" height="30" />
+                    <a href="adherents.html">Adhérents</a>
+                </li>
+                <li>
+                    <img class="connect" src="../resources/plug-solid.svg" width="30" height="30" />
+                    <a href="connect.html">Login</a>
+                </li>
+                <li>
+                    <img class="disconnect" src="../resources/logout-solid.svg" width="30" height="30" />
+                        <a href="logout.html">Déconnexion</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <div>
-        <span>
-            <h2>Liste d'adhérents</h2>
-            <ol>
-                <li>Samy</li>
-                <li>Bruno</li>
-                <li>Frederic</li>
-                <li>Nicolas</li>
-                <li>Toto</li>
-            </ol>
-        </span>
+    <div id="listAdherents">
+        <h2>Liste d'adhérents</h2>
+        <li>Samy</li>
+        <li>Bruno</li>
+        <li>Frederic</li>
+        <li>Nicolas</li>
+        <li>Toto</li>
         <br>
-        <a href="adherent.html">S'inscrire en tant qu'adhérent</a>
+        <strong><a href="register.html" style="border:1px solid white">S'inscrire en tant qu'adhérent</a></strong>
     </div>
+
     <br>
+    <br>
+
+
+    <table>
+        <caption>Tableaux des emprunts</caption>
+        <thead>
+            <th>Objet emprunté</th>
+            <th>Type d'objet</th>
+            <th>Date d'emprunt</th>
+            <th>Nom emprunteur</th>
+        </thead>
+
+        <tr>
+            <td><a href="biblio/jeux.html">Warcraft III</a></td>
+            <td>Jeux</td>
+            <td>01/10/2018</td>
+            <td>Samy</td>
+        </tr>
+
+        <tr>
+            <td><a href="biblio/musiques.html">Fallout 4 : Diamond City Radio</a></td>
+            <td>Musiques</td>
+            <td>01/10/2018</td>
+            <td>Samy</td>
+        </tr>
+
+        <tr>
+            <td><a href="biblio/jeux.html">Warcraft III</a></td>
+            <td>Jeux</td>
+            <td>04/10/2018</td>
+            <td>Bruno</td>
+        </tr>
+
+        <tr>
+            <td><a href="biblio/musiques.html">Fallout 4 : Diamond City Radio</a></td>
+            <td>Musiques</td>
+            <td>04/10/2018</td>
+            <td>Bruno</td>
+        </tr>
+
+        <tr>
+            <td><a href="biblio/videos.html">Joueur du Grenier</a></td>
+            <td>Vidéo</td>
+            <td>01/10/2018</td>
+            <td>Samy</td>
+        </tr>
+
+        <tfoot>
+            <th colspan="3">Emprunts effectués</th>
+            <th>5</th>
+        </tfoot>
+    </table>
+
     <footer>COPYRIGHT@2018 Samy</footer>
 </body>
 

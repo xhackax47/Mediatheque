@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content=" Page Jeux de la médiathèque ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/Favicon.png" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../resources/style.css">
+    <link rel="stylesheet" href="../resources/login.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <h1>Connexion</h1>
+
+    <header>
+        <nav id="menuG">
+            <ul class="menuG">
+                <li>
+                    <img class="accueil" src="../resources/home-solid.svg" width="30" height="30" />
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <img class="jeux" src="../resources/gamepad-solid.svg" width="30" height="30" />
+                    <a href="jeux.html">Jeux</a>
+                </li>
+                <li>
+                    <img class="musiques" src="../resources/music-solid.svg" width="30" height="30" />
+                    <a href="musiques.html">Musiques</a>
+                </li>
+                <li>
+                    <img class="videos" src="../resources/youtube-brands.svg" width="30" height="30" />
+                    <a href="videos.html">Vidéos</a>
+                </li>
+                <li>
+                    <img class="adherents" src="../resources/address-card-solid.svg" width="30" height="30" />
+                    <a href="adherents.html">Adhérents</a>
+                </li>
+                <li>
+                    <img class="connect" src="../resources/plug-solid.svg" width="30" height="30" />
+                    <a href="connect.html">Login</a>
+                </li>
+                <li>
+                    <img class="disconnect" src="../resources/logout-solid.svg" width="30" height="30" />
+                    <a href="logout.html">Déconnexion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Connexion</h2>
+    <form action="">
+        <div class="imgcontainer">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="userName"><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="Entrez votre nom d'utilisateur" name="userName" required>
+
+            <label for="passW"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Entrez votre mot de passe" name="passW" required>
+
+            <button type="submit">Login</button>
+            <label class="remember">
+                <p>
+                    <input type="checkbox" checked="checked" name="remember">Resté connecté
+                    Oubli <a href="#">de mot de passe?</a>
+                </p>
+            </label>
+
+        </div>
+
+        <div class="container">
+            <button type="button" class="cancelbtn">Annuler</button>
+        </div>
+    </form>
+
+    <footer>COPYRIGHT@2018 Samy</footer>
+</body>
+
+</html>

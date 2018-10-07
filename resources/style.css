@@ -1,12 +1,174 @@
+/*   FICHIER CSS MEDIATHEQUE PAR SAMY CHAABI
+*
+*   OCTOBRE 2018
+*/
+
+/* Corps de page */
 body {
     color: whitesmoke;
     background-color: black;
+    text-align: center;
 }
 
+/* Pied de page */
+footer{
+    border: solid 1px white;
+    border-radius: 10px;
+    background-color: firebrick;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    display : row;
+    width: 100%;
+}
+
+/* Element de liste */
+li{
+    list-style-type: none; 
+}
+
+/* Titre H1 */
+h1{
+    background-color: firebrick;
+    color: seashell;
+    text-align: center;
+    padding: 1px;
+    margin-right: 40%;
+    margin-left: 40%;
+    border-radius: 25em;
+    border: 2px whitesmoke solid;
+}
+
+/* Titre H2 */
+h2{ 
+    background-color: firebrick;
+    color: slateblue;
+    border: 2px whitesmoke solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Titre H3 */
+h3{
+    text-align: center;
+    color: coral;
+}
+
+/* Titre H4 */
+h4{
+    text-align: center;
+    color: orangered;
+}
+
+/* Tableau */
+table{
+    text-align: center;
+}
+
+/* Paragraphe */
+p{
+    color: whitesmoke;
+}
+
+/* Vidéo (non iframe) */
+video{
+    padding-right: 20%;
+}
+
+/* Liste id=listAdherents */
+#listAdherents{
+    text-align: center;
+}
+
+/* Lien survol */
 a:hover{
     color:yellowgreen;
 }
 
+/* Lien */
+a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Lien visité */
 a:visited{
-    color:violet;
+    color: whitesmoke;
+}
+
+/* Lien visité dans id=menuG */
+#menuG a:visited{
+    color: whitesmoke;
+}
+
+/* Lien visité dans class=menuG */
+.menuG a:visited{
+    color: whitesmoke;
+}
+
+/* id=menuG */
+#menuG{
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/* Image dans class=main */
+.main img{
+    width: 640px;
+    height: 480px;
+}
+
+.mainJDG{
+    font-family: fantasy;
+    font-style: normal;
+}
+
+.mainMusic{
+    font-family: cursive;
+    font-style: oblique;
+}
+
+/* Elements de liste survolés dans class=menuG */
+.menuG li:hover{
+    background-color: firebrick;
+}
+
+/* class=menuG */
+.menuG{
+    display: flex;
+}
+
+/* Elements li de class=menuG */
+.menuG li{ 
+    color: whitesmoke;
+    display: flex;
+    background-color: darkslategrey;
+    border: 1px solid slateblue;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    margin: auto;
+}
+
+/* class=videosWar3 */
+.videosWar3{
+    text-align: center;
+}
+
+/* class=remember */
+.remember{
+    float: left;
+}
+
+/* id=remember */
+#remember{
+    float: left;
+}
+
+/* id=inlineFrameWar3 */
+#inlineFrameWar3{
+    display: block;
+    text-align: center;
 }
