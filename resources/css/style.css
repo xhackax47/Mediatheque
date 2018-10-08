@@ -4,13 +4,9 @@
 */
 
 /* Corps de page */
+
 html{
     background-color: black;
-}
-body {
-    color: whitesmoke;
-    text-align: center;
-    margin: 0;
 }
 
 /* Images dans le body */
@@ -44,11 +40,8 @@ h1{
     color: seashell;
     text-align: center;
     padding: 1px;
-    margin-right: 40%;
-    margin-left: 40%;
-    border-radius: 25em;
-    border: 2px whitesmoke solid;
-    display : row;
+    border-top: 2px whitesmoke solid;
+    border-bottom: 2px whitesmoke solid;
 }
 
 /* Titre H2 */
@@ -56,6 +49,7 @@ h2{
     text-shadow: 1px 2px 2px black;
     background-color: firebrick;
     color: seashell;
+    border-radius: 25em;
     border-top: 2px whitesmoke solid;
     border-bottom: 2px whitesmoke solid;
     text-align: center;
@@ -145,6 +139,14 @@ a:hover{
     color:yellowgreen;
 }
 
+/* class=bodyG */
+.bodyG {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    background-color: black;
+}
+
 /* Lien visité dans class=menuG */
 .menuG a:visited{
     color: whitesmoke;
@@ -179,6 +181,7 @@ a:hover{
     flex-flow: row nowrap;
     align-content: center;
     justify-content: space-evenly;
+    background-color: black;
 }
 
 /* Elements li de class=menuG */
@@ -203,6 +206,7 @@ a:hover{
 .trends{
     display: flex;
     justify-content: space-between;
+    background-color: black;
 }
 
 /* Elements article de class=trends */
