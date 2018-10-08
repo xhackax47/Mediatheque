@@ -20,7 +20,6 @@ img{
 /* Pied de page */
 footer{
     border: solid 1px white;
-    border-radius: 10px;
     background-color: firebrick;
     text-align: center;
     position: fixed;
