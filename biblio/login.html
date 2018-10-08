@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content=" Page Index/Accueil de la médiathèque ">
+    <meta name="description" content=" Page Jeux de la médiathèque ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../resources/img/Favicon.png" />
-    <title>Logout</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/login.css">
     <link rel="stylesheet" href="../resources/css/responsive.css">
     <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
-    <h1>Logout</h1>
+    <h1>Login</h1>
     <header>
         <nav id="menuG">
             <ul class="menuG">
@@ -55,12 +56,34 @@
             </ul>
         </nav>
     </header>
-    <h2>Déconnexion</h2>
-    <br>
-    <div>
-        <p>Vous êtes bien déconnecté...</p>
-    </div>
-    <br>
+    <h2>Connexion</h2>
+    <form action="">
+        <div class="imgcontainer">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="userName"><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="Entrez votre nom d'utilisateur" name="userName" required>
+
+            <label for="passW"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Entrez votre mot de passe" name="passW" required>
+
+            <button type="submit">Login</button>
+            <label class="remember">
+                <p>
+                    <input type="checkbox" checked="checked" name="remember">Resté connecté
+                    Oubli <a href="#">de mot de passe?</a>
+                </p>
+            </label>
+
+        </div>
+
+        <div class="container">
+            <button type="button" class="cancelbtn">Annuler</button>
+        </div>
+    </form>
+
     <footer>COPYRIGHT@2018 Samy</footer>
 </body>
 
