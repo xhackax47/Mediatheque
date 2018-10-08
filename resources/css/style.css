@@ -15,7 +15,6 @@ img{
     height: 480px;
 }
 
-
 /* Pied de page */
 footer{
     text-shadow: 1px 2px 2px black;
@@ -26,6 +25,10 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+main{
+    margin-top: 1.5%;
 }
 
 /* Element de liste */
@@ -59,7 +62,7 @@ h2{
 h3{
     text-shadow: 1px 2px 2px black;
     text-align: center;
-    color: coral;
+    color : coral;
 }
 
 /* Titre H4 */
@@ -205,16 +208,14 @@ a:hover{
 /* class=trends */
 .trends{
     display: flex;
-    justify-content: space-between;
     background-color: black;
+    padding-top: 2%;
 }
 
 /* Elements article de class=trends */
 .trends article{
     background-color: darkslategrey;
-    border: 1px solid firebrick;
-    padding: 10px;
-    margin: 10px;
+    border: 1px solid whitesmoke;
 }
 
 /* Elements H1 de class=trends */
@@ -228,6 +229,12 @@ a:hover{
     border-radius: 25em;
     border: 2px whitesmoke solid;
 }
+
+.md4{
+    padding: 10px;
+    margin: 10px;
+}
+
 /* Liste id=listAdherents */
 #listAdherents{
     text-align: center;

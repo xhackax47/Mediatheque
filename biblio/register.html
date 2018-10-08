@@ -4,150 +4,156 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content=" Page Index/Accueil de la médiathèque ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Inscription</title>
     <link rel="icon" href="../resources/img/Favicon.png" />
     <link rel="stylesheet" href="../resources/css/style.css">
     <link rel="stylesheet" href="../resources/css/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
 </head>
 
 <body class="bodyG">
     <h1>Inscription</h1>
-    <header>
-        <nav id="menuG">
-            <ul class="menuG">
-                <li>
-                    <a href="../index.html" title="Accueil">
-                        <img id="ico" src="../resources/img/home-solid.svg" alt="Accueil" />
-                    </a>
-                </li>
-                <li>
-                    <a href="jeux.html" title="Jeux vidéos">
-                        <img id="ico" src="../resources/img/gamepad-solid.svg" alt="Jeux" />
-                    </a>
-                </li>
-                <li>
-                    <a href="musiques.html" title="Musiques">
-                        <img id="ico" src="../resources/img/music-solid.svg" alt="Musiques" />
-                    </a>
-                </li>
-                <li>
-                    <a href="videos.html" title="Vidéos">
-                        <img id="ico" src="../resources/img/youtube-brands.svg" alt="Vidéos" />
-                    </a>
-                </li>
-                <li>
-                    <a href="adherents.html" title="Adhérents">
-                        <img id="ico" src="../resources/img/address-card-solid.svg" alt="Adhérents" />
-                    </a>
-                </li>
-                <li>
-                    <a href="login.html" title="Login">
-                        <img id="ico" src="../resources/img/plug-solid.svg" alt="Login" />
-                    </a>
-                </li>
-                <li>
-                    <a href="logout.html" title="Logout">
-                        <img id="ico" src="../resources/img/logout-solid.svg" alt="Logout" />
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="main">
-        <h2>Inscription / Adhésion</h2>
-        <form action="/pageAction" method="POST">
-            <div>
-                <label for="firstName">Prénom* :</label>
-                <input type="text" id="firstName" name="user_firstName" autofocus autocomplete="off" required>
-            </div>
-            <br>
-            <div>
-                <label for="lastName">Nom* :</label>
-                <input pattern="[A-Z]*" type="text" id="lastName" name="user_lastName" autocomplete="off" required>
-            </div>
-            <br>
-            <div>
-                <label for="birthDate">Date de naissance* :</label>
-                <input type="date" id="birthDate" name="user_birthDate" required>
-            </div>
-            <br>
-            <div>
-                <label for="mail">Adresse E-mail* :</label>
-                <input type="email" id="mail" name="user_mail" required>
-            </div>
-            <br>
-            <div>
-                <label for="tel">Téléphone* :</label>
-                <input type="tel" id="tel" name="user_tel" required>
-            </div>
-            <br>
-            <fieldset required>
-                <legend>Préferences de contact* :</legend>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="menuG">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="resources/img/home-solid.svg" alt="Accueil">Mediathèque</a>
+                    </div>
+                    <ul class="menuG">
+                        <li>
+                            <a href="../index.html" title="Accueil">
+                                <img id="ico" src="../resources/img/home-solid.svg" alt="Accueil" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jeux.html" title="Jeux vidéos">
+                                <img id="ico" src="../resources/img/gamepad-solid.svg" alt="Jeux" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="musiques.html" title="Musiques">
+                                <img id="ico" src="../resources/img/music-solid.svg" alt="Musiques" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="videos.html" title="Vidéos">
+                                <img id="ico" src="../resources/img/youtube-brands.svg" alt="Vidéos" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="adherents.html" title="Adhérents">
+                                <img id="ico" src="../resources/img/address-card-solid.svg" alt="Adhérents" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" title="Login">
+                                <img id="ico" src="../resources/img/plug-solid.svg" alt="Login" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="logout.html" title="Logout">
+                                <img id="ico" src="../resources/img/logout-solid.svg" alt="Logout" />
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <h2>Inscription / Adhésion</h2>
+            <form action="/pageAction" method="POST">
                 <div>
-                    <input type="radio" id="telPref" name="contactPreferences" value="coding">
-                    <label for="telPref">Téléphone</label>
+                    <label for="firstName">Prénom* :</label>
+                    <input type="text" id="firstName" name="user_firstName" autofocus autocomplete="off" required>
                 </div>
+                <br>
                 <div>
-                    <input type="radio" id="mailPref" name="contactPreferences" value="music">
-                    <label for="mailPref">E-mail</label>
+                    <label for="lastName">Nom* :</label>
+                    <input pattern="[A-Z]*" type="text" id="lastName" name="user_lastName" autocomplete="off" required>
                 </div>
-            </fieldset>
-            <br>
-            <fieldset required>
-                <legend>Services souscrits* :</legend>
+                <br>
                 <div>
-                    <label for="anim">Animations</label>
-                    <input type="checkbox" id="anim" name="services" value="coding">
+                    <label for="birthDate">Date de naissance* :</label>
+                    <input type="date" id="birthDate" name="user_birthDate" required>
                 </div>
+                <br>
                 <div>
-                    <label for="spect">Spectacles</label>
-                    <input type="checkbox" id="spect" name="services" value="music">
+                    <label for="mail">Adresse E-mail* :</label>
+                    <input type="email" id="mail" name="user_mail" required>
                 </div>
+                <br>
                 <div>
-                    <label for="empruntsIll">Emprunts Illimités</label>
-                    <input type="checkbox" id="empruntsIll" name="services" value="coding">
+                    <label for="tel">Téléphone* :</label>
+                    <input type="tel" id="tel" name="user_tel" required>
                 </div>
-            </fieldset>
+                <br>
+                <fieldset required>
+                    <legend>Préferences de contact* :</legend>
+                    <div>
+                        <input type="radio" id="telPref" name="contactPreferences" value="coding">
+                        <label for="telPref">Téléphone</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mailPref" name="contactPreferences" value="music">
+                        <label for="mailPref">E-mail</label>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset required>
+                    <legend>Services souscrits* :</legend>
+                    <div>
+                        <label for="anim">Animations</label>
+                        <input type="checkbox" id="anim" name="services" value="coding">
+                    </div>
+                    <div>
+                        <label for="spect">Spectacles</label>
+                        <input type="checkbox" id="spect" name="services" value="music">
+                    </div>
+                    <div>
+                        <label for="empruntsIll">Emprunts Illimités</label>
+                        <input type="checkbox" id="empruntsIll" name="services" value="coding">
+                    </div>
+                </fieldset>
 
-            <br>
-            <div>
-                <label for="codeParrain">Code parrain :</label>
-                <input type="number" id="codeParrain" name="codeParrain" min="10" required>
-            </div>
+                <br>
+                <div>
+                    <label for="codeParrain">Code parrain :</label>
+                    <input type="number" id="codeParrain" name="codeParrain" min="10" required>
+                </div>
 
-            <br>
-            <div>
-                <SELECT name="pays" required>
-                    <OPTION selected value="FR">FRANCE</OPTION>
-                    <OPTION value="EN">ENGLAND</OPTION>
-                    <OPTION value="ES">ESPANOL</OPTION>
-                    <OPTION value="IT">ITALIA</OPTION>
-                    <OPTION value="CU">CUBA</OPTION>
-                </SELECT>
-            </div>
+                <br>
+                <div>
+                    <SELECT name="pays" required>
+                        <OPTION selected value="FR">FRANCE</OPTION>
+                        <OPTION value="EN">ENGLAND</OPTION>
+                        <OPTION value="ES">ESPANOL</OPTION>
+                        <OPTION value="IT">ITALIA</OPTION>
+                        <OPTION value="CU">CUBA</OPTION>
+                    </SELECT>
+                </div>
 
-            <br>
-            <div>
-                <label for="VIP">VIP</label>
-                <input type="checkbox" id="VIP" name="VIP" value=false>
-            </div>
+                <br>
+                <div>
+                    <label for="VIP">VIP</label>
+                    <input type="checkbox" id="VIP" name="VIP" value=false>
+                </div>
 
-            <br>
-            <div>
-                <input type="submit" id="submit" value="S'inscrire">
-            </div>
-        </form>
+                <br>
+                <div>
+                    <input type="submit" id="submit" value="S'inscrire">
+                </div>
+            </form>
+        </div>
+        <br>
+        <footer>COPYRIGHT@2018 Samy</footer>
     </div>
-    <br>
-    <footer>COPYRIGHT@2018 Samy</footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-    
+
 </html>
