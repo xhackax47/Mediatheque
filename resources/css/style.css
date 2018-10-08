@@ -172,12 +172,12 @@ a:visited{
 /* class=menuG */
 .menuG{
     display: flex;
+    justify-content: space-around;
 }
 
 /* Elements li de class=menuG */
 .menuG li{ 
     color: whitesmoke;
-    display: flex;
     background-color: darkslategrey;
     border-radius: 10px;
     font-size: 18px;
@@ -215,18 +215,17 @@ a:visited{
 
 /* class=trends */
 .trends{
-    box-sizing: border-box;
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 /* Elements article de class=trends */
 .trends article{
     background-color: darkslategrey;
     border: 1px solid firebrick;
-    padding: 20px;
-    margin: 20px;
-    width: 30%;
-    height: 30%;
+    padding: 10px;
+    margin: 10px;
 }
 
 /* Elements H1 de class=trends */
