@@ -8,75 +8,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Médiathèque</title>
     <link rel="icon" href="resources/img/Favicon.png" />
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+    <link rel="stylesheet" href="resources/css/login.css">
 </head>
-<h1>Médiathèque</h1>
 
 <body class="bodyG">
+    <h1>Médiathèque</h1>
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="menuG">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html" alt="Accueil">Mediathèque</a>
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="menuG">
+                <div class="container-fluid">
+                    <ul class="menuG">
+                        <li>
+                            <a href="index.html" title="Accueil">
+                                <img id="ico" src="resources/img/home-solid.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="biblio/jeux.html" title="Jeux vidéos">
+                                <img id="ico" src="resources/img/gamepad-solid.svg" alt="Jeux" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="biblio/musiques.html" title="Musiques">
+                                <img id="ico" src="resources/img/music-solid.svg" alt="Musiques" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="biblio/videos.html" title="Vidéos">
+                                <img id="ico" src="resources/img/youtube-brands.svg" alt="Vidéos" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="biblio/adherents.html" title="Adhérents">
+                                <img id="ico" src="resources/img/address-card-solid.svg" alt="Adhérents" />
+                            </a>
+                        </li>
+                        <li>
+                            <a onclick="document.getElementById('modalLogin').style.display='block'"><img id="ico" src="resources/img/plug-solid.svg"
+                                    alt="Login" /></a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="menuG">
-                    <li>
-                        <a href="index.html" title="Accueil">
-                            <img id="ico" src="resources/img/home-solid.svg" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="biblio/jeux.html" title="Jeux vidéos">
-                            <img id="ico" src="resources/img/gamepad-solid.svg" alt="Jeux" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="biblio/musiques.html" title="Musiques">
-                            <img id="ico" src="resources/img/music-solid.svg" alt="Musiques" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="biblio/videos.html" title="Vidéos">
-                            <img id="ico" src="resources/img/youtube-brands.svg" alt="Vidéos" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="biblio/adherents.html" title="Adhérents">
-                            <img id="ico" src="resources/img/address-card-solid.svg" alt="Adhérents" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="biblio/login.html" title="Login">
-                            <img id="ico" src="resources/img/plug-solid.svg" alt="Login" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="biblio/logout.html" title="Logout">
-                            <img id="ico" src="resources/img/logout-solid.svg" alt="Logout" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="container-fluid">
-        <div class="trends accordion">
+            </nav>
+        </header>
+    <main class="container-fluid">
+        <div class="trends" id="accordion">
             <article class="col-md-4">
-                <div class="md4">
-                    <header>
-                        <a class="btn btn-danger" data-toggle="collapse" href="#collapseGames" role="button"
-                            aria-expanded="false" aria-controls="collapseGames">
-                            News Jeux
-                        </a>
-                        <h3>Rédacteur : Casper</h3>
-                        <time datetime="2018-08-07">le 7 Octobre 2018</time>
-                    </header>
+                <div class="md4 card">
+                    <div class="card-header" id="headOne">
+                        <header>
+                            <a class="btn btn-danger collapsed" data-toggle="collapse" href="#collapseGames" role="button"
+                                aria-expanded="false" aria-controls="collapseGames">
+                                News Jeux
+                            </a>
+                            <h3>Rédacteur : Casper</h3>
+                            <time datetime="2018-08-07">le 7 Octobre 2018</time>
+                        </header>
+                    </div>
                     <br>
-                    <div class="collapse" id="collapseGames">
-                        <div class="card card-body">
+                    <div class="collapse" aria-labelledby="headOne" data-parent="#accordion" id="collapseGames">
+                        <div class="card-body">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin
                                 efficitur
@@ -146,18 +140,20 @@
                     </div>
             </article>
             <article class="col-md-4">
-                <div class="md4">
-                    <header>
-                        <a class="btn btn-danger" data-toggle="collapse" href="#collapseMusic" role="button"
-                            aria-expanded="false" aria-controls="collapseMusic">
-                            News Musiques
-                        </a>
-                        <h3>Rédacteur : Casper</h3>
-                        <time datetime="2018-08-07">le 7 Octobre 2018</time>
-                    </header>
+                <div class="md4 card">
+                    <div class="card-header" id="headTwo">
+                        <header>
+                            <a class="btn btn-danger collapsed" data-toggle="collapse" href="#collapseMusic" role="button"
+                                aria-expanded="false" aria-controls="collapseMusic">
+                                News Musiques
+                            </a>
+                            <h3>Rédacteur : Casper</h3>
+                            <time datetime="2018-08-07">le 7 Octobre 2018</time>
+                        </header>
+                    </div>
                     <br>
-                    <div class="collapse" id="collapseMusic">
-                        <div class="card card-body">
+                    <div class="collapse" aria-labelledby="headTwo" data-parent="#accordion" id="collapseMusic">
+                        <div class="card-body">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin
                                 efficitur
@@ -228,17 +224,19 @@
                 </div>
             </article>
             <article class="col-md-4">
-                <div class="md4">
-                    <header>
-                        <a class="btn btn-danger" data-toggle="collapse" href="#collapseVideos" role="button"
-                            aria-expanded="false" aria-controls="collapseVideos">
-                            News Vidéos
-                        </a>
-                        <h3>Rédacteur : Casper</h3>
-                        <time datetime="2018-08-07">le 7 Octobre 2018</time>
-                    </header>
-                    <div class="collapse" id="collapseVideos">
-                        <div class="card card-body">
+                <div class="md4 card">
+                    <div class="card-header" id="headThree">
+                        <header>
+                            <a class="btn btn-danger collapsed" data-toggle="collapse" href="#collapseVideos" role="button"
+                                aria-expanded="false" aria-controls="collapseVideos">
+                                News Vidéos
+                            </a>
+                            <h3>Rédacteur : Casper</h3>
+                            <time datetime="2018-08-07">le 7 Octobre 2018</time>
+                        </header>
+                    </div>
+                    <div class="collapse" aria-labelledby="headThree" data-parent="#accordion" id="collapseVideos">
+                        <div class="card-body">
                             <br>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin
@@ -310,12 +308,43 @@
                 </div>
             </article>
         </div>
-    </div>
+        <!-- Modal -->
+        <div id="modalLogin" class="modal">
+            <span onclick="document.getElementById('modalLogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+            <!-- Contenu Modal -->
+            <form class="modal-content animate" action="/action_page.php">
+                <h1>Login</h1>
+                <div class="imgcontainer">
+                    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+                <br>
+                <div class="container">
+                    <label for="uname"><b>Nom d'utilisateur</b></label>
+                    <input type="text" placeholder="Entrez votre nom d'utilisateur" name="username" required>
+
+                    <label for="psw"><b>Mot de passe</b></label>
+                    <input type="password" placeholder="Entrez votre mot de passe" name="psw" required>
+
+                    <button type="submit" class="btn btn-success">Connexion</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+                    </label>
+                </div>
+
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('modalLogin').style.display='none'" class="cancelbtn btn btn-danger">Cancel</button>
+                    <span class="psw"><a href="forgot.html"></a>Oubli de mot de passe?</a></span>
+                </div>
+            </form>
+        </div>
+    </main>
     <footer>COPYRIGHT@2018 Samy</footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+<script src="resources/js/script.js"></script>
 
 </html>

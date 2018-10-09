@@ -4,7 +4,6 @@
 */
 
 /* Corps de page */
-
 html{
     background-color: black;
 }
@@ -25,10 +24,6 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-main{
-    margin-top: 1.5%;
 }
 
 /* Element de liste */
@@ -71,46 +66,43 @@ h4{
     color: orangered;
 }
 
+.table{
+    background-color: #666666;
+}
 
 /* Titre tableau */
-caption {
+.table caption {
+    background-color: firebrick;
+    text-align: center;
+    color:whitesmoke;
     border: 2px dotted whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Tableau */
-table {
-    border-bottom: 2px solid whitesmoke;
-    border-left: 2px solid whitesmoke;
-    border-right: 2px solid whitesmoke;
-    border-collapse: collapse;
-    width: 50%;
-    margin:auto;
-}
-
 /* Cellules entetes tableau */
-th {
+.table th {
+    text-align: center;
     font-family: monospace;
-    border-bottom: 2px solid whitesmoke;
+    border: 2px solid whitesmoke;
     width: 50%;
     padding: 5px;
-    background-color: firebrick;
 }
 
 /* Cellules données tableau */
-td {
+.table td {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 1px solid firebrick;
+    border-right: 2px solid whitesmoke;
+    border-top: 1px solid #666666;
     width: 50%;
     padding: 5px;
     text-align: center;
-    background-color: firebrick;
 }
 
 /* Cellules footer tableau */
-tfoot{
+.table tfoot{
     border: 2px solid whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: firebrick;
 }
 
 /* Paragraphe */
@@ -136,14 +128,9 @@ a:visited{
     color: whitesmoke;
 }
 
-
-/* Lien survol */
-a:hover{
-    color:yellowgreen;
-}
-
 /* class=bodyG */
 .bodyG {
+    padding-top: 5%;
     color: whitesmoke;
     text-align: center;
     margin: 0;
@@ -153,6 +140,11 @@ a:hover{
 /* Lien visité dans class=menuG */
 .menuG a:visited{
     color: whitesmoke;
+}
+
+ /* Lien survol */
+.menuG a:hover{
+    color:yellowgreen;
 }
 
 /* Image dans class=main */
@@ -183,7 +175,7 @@ a:hover{
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: black;
 }
 
@@ -216,6 +208,7 @@ a:hover{
 .trends article{
     background-color: darkslategrey;
     border: 1px solid whitesmoke;
+    margin: 1%;
 }
 
 /* Elements H1 de class=trends */
@@ -264,8 +257,8 @@ a:hover{
 
 /* id=ico */
 #ico{
-    width: 70px;
-    height: 70px; 
+    width: 40px;
+    height: 40px; 
 }
 
 /* id=register */
@@ -278,4 +271,8 @@ a:hover{
 /* Survol id=register */
 #register:hover{
     background-color: firebrick;
+}
+
+#nbEmprunts{
+    text-align: center;
 }
