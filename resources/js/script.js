@@ -1,9 +1,13 @@
-// Fermer la modal quand l'utilisateur clique en dehors
+// Fermer les modales quand l'utilisateur clique en dehors
 
-var modal = document.getElementById('modalLogin');
+var modalLogin = document.getElementById('modalLogin');
+var modalRegister = document.getElementById('modalRegister');
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalLogin) {
+        modalLogin.style.display = "none";
+    }
+    else if (event.target == modalRegister) {
+        modalRegister.style.display = "none";
     }
 }
