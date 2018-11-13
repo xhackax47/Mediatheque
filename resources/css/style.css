@@ -130,7 +130,6 @@ a:visited{
 
 /* class=bodyG */
 .bodyG {
-    padding-top: 10%;
     color: whitesmoke;
     text-align: center;
     margin: 0;
@@ -196,7 +195,6 @@ a:visited{
 .trends{
     display: flex;
     background-color: black;
-    padding-top: 2%;
 }
 
 /* Elements H1 de class=trends */
@@ -211,11 +209,6 @@ a:visited{
     border: 2px whitesmoke solid;
 }
 
-.md4{
-    padding: 10px;
-    margin: 10px;
-}
-
 /* Liste id=listAdherents */
 #listAdherents{
     text-align: center;
@@ -224,6 +217,8 @@ a:visited{
 /* id=menuG */
 #menuG{
     color: whitesmoke;
+    top: 0;
+    width: 100%;
 }
 
 /* Lien visité dans id=menuG */
@@ -266,4 +261,12 @@ a:visited{
 
 #modalRegister legend{
     border-bottom: none;
+}
+
+#userName{
+    color:black;
+}
+
+#passWord{
+    color:black;
 }
